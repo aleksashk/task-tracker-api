@@ -23,6 +23,7 @@ public class ProjectEntity {
     @Column(unique = true)
     String name;
 
+    @Builder.Default
     Instant createAt = Instant.now();
 
     @OneToMany
