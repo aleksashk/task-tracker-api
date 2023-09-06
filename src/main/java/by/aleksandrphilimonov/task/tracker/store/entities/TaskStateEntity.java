@@ -9,7 +9,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "task_state")
-@Data
+@Getter
+@Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor

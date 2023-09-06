@@ -10,7 +10,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "project")
-@Data
+@Getter
+@Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor
