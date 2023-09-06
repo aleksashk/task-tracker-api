@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -25,5 +26,5 @@ public class ProjectEntity {
     Instant createAt = Instant.now();
 
     @OneToMany
-    List<TaskStateEntity> taskStates;
+    List<TaskStateEntity> taskStates = new ArrayList<>();
 }
