@@ -27,6 +27,7 @@ public class ProjectEntity {
     @Builder.Default
     Instant createAt = Instant.now();
 
+    @Builder.Default
     @OneToMany
     List<TaskStateEntity> taskStates = new ArrayList<>();
 }
